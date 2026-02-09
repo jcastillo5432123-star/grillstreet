@@ -39,7 +39,7 @@ export default function ContactPage() {
             <div className="mt-8 overflow-hidden rounded-3xl border border-white/10">
               <iframe
                 title="Grill Street map"
-                src="https://maps.google.com/maps?q=419%20W%20US-83%20BUS,%20McAllen,%20TX%2078501&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.app.goo.gl/SonXjT9UtZZD3WpF9"
                 className="h-[260px] w-full"
                 loading="lazy"
               />
