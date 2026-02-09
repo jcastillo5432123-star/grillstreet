@@ -83,18 +83,33 @@ export default function FinancingPage() {
       <section className="bg-ash">
         <div className="container grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="glass-card">
-            <p className="text-xs uppercase tracking-[0.3em] text-ember">18 month special financing</p>
-            <h2 className="heading-lg mt-3 text-sand">Expand your purchasing power</h2>
+            <p className="text-xs uppercase tracking-[0.3em] text-ember">Promotional financing</p>
+            <h2 className="heading-lg mt-3 text-sand">Expand your purchasing power with Promotional Financing through Synchrony.</h2>
             <p className="mt-4 text-sm text-steel">
-              On qualifying purchases with your outdoor living credit card, enjoy promotional financing through Synchrony—one of
-              the nation’s premier consumer financial services companies since 1932.
+              Synchrony is one of the nation’s premier consumer financial services companies. Our roots in consumer finance trace
+              back to 1932, and today we are the largest provider of private label credit cards in the United States based on
+              purchase volume and receivables.
             </p>
             <div className="mt-6 space-y-3 text-sm text-steel">
-              <p>• Simple application and quick credit decisions.</p>
-              <p>• Unsecured, revolving credit lines.</p>
-              <p>• Promotional financing options when available.</p>
-              <p>• Convenient monthly payment plans.</p>
-              <p>• Online account management.</p>
+              <p>• A simple application process, and fast credit decisions</p>
+              <p>• Unsecured, revolving credit lines</p>
+              <p>• Promotional financing options1</p>
+              <p>• Convenient monthly payment options</p>
+              <p>• Online account management</p>
+            </div>
+            <p className="mt-6 text-xs text-steel">
+              1Subject to credit approval. Minimum monthly payments required. See store for details.
+            </p>
+            <p className="mt-4 text-xs text-steel">
+              For all promotions: Qualifying purchase must be made with your Home Design credit card issued by Synchrony Bank and
+              a $29 account activation fee will apply and be charged at the time first purchase posts to account. For new accounts:
+              Purchase APR is 26.99%; Minimum Monthly Interest Charge is $2. Existing cardholders should see their credit card
+              agreement for their applicable terms. Subject to credit approval.
+            </p>
+            <div className="mt-6">
+              <Link href="https://etail.mysynchrony.com/eapply/eapply.action" className="btn-outline">
+                Apply with Synchrony
+              </Link>
             </div>
           </div>
           <div>
@@ -107,11 +122,6 @@ export default function FinancingPage() {
               We’ll help you select the financing option that aligns with your timeline, then you can complete the application
               process online—no guesswork, just guidance.
             </p>
-            <div className="mt-8">
-              <Link href="/contact" className="btn-primary">
-                Apply with Grill Street
-              </Link>
-            </div>
             <p className="mt-6 text-xs text-steel">
               *Promotional financing and credit offers are subject to credit approval and may change without notice. Terms, minimum
               purchase requirements, and eligible products vary by program. See store for details.
