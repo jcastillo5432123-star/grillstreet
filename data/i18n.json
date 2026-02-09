@@ -1,0 +1,40 @@
+{
+  "en": {
+    "nav": {
+      "home": "Home",
+      "outdoorKitchens": "Outdoor Kitchens",
+      "products": "Products",
+      "showroom": "Showroom",
+      "gallery": "Gallery",
+      "financing": "Financing",
+      "events": "Events",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "cta": {
+      "schedule": "Schedule Consultation",
+      "call": "Call Now",
+      "directions": "Get Directions",
+      "consult": "Consultation"
+    }
+  },
+  "es": {
+    "nav": {
+      "home": "Inicio",
+      "outdoorKitchens": "Cocinas Exteriores",
+      "products": "Productos",
+      "showroom": "Sala de Exhibición",
+      "gallery": "Galería",
+      "financing": "Financiamiento",
+      "events": "Eventos",
+      "about": "Nosotros",
+      "contact": "Contacto"
+    },
+    "cta": {
+      "schedule": "Agenda Consulta",
+      "call": "Llama Ahora",
+      "directions": "Cómo Llegar",
+      "consult": "Consulta"
+    }
+  }
+}
