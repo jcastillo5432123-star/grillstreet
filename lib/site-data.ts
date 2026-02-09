@@ -7,7 +7,6 @@ export const siteInfo = {
   phoneSecondary: "956-627-0429",
   email: "info@gst140.com",
   address: "419 W US-83 BUS, McAllen, TX 78501",
-  addressAlt: "419 Hwy 83, McAllen, TX 78501",
   hours: [
     "Mon-Fri 09:00-18:00",
     "Sat 10:00-17:00",
