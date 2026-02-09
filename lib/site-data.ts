@@ -12,7 +12,9 @@ export const siteInfo = {
     "Sat 10:00-17:00",
     "Sun Closed"
   ],
-  googleMaps: "https://maps.app.goo.gl/SonXjT9UtZZD3WpF9",
+  googleMaps: "https://www.google.com/maps?q=419+W+US-83+BUS,+McAllen,+TX+78501",
+  googleMapsEmbed:
+    "https://www.google.com/maps?q=419+W+US-83+BUS,+McAllen,+TX+78501&output=embed",
   url: "https://gst140.com"
 };
 

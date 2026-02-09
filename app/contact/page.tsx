@@ -39,7 +39,7 @@ export default function ContactPage() {
             <div className="mt-8 overflow-hidden rounded-3xl border border-white/10">
               <iframe
                 title="Grill Street map"
-                src="https://maps.app.goo.gl/SonXjT9UtZZD3WpF9"
+                src={siteInfo.googleMapsEmbed}
                 className="h-[260px] w-full"
                 loading="lazy"
               />
