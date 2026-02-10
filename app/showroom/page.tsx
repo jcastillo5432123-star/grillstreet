@@ -61,15 +61,15 @@ export default function ShowroomPage() {
           <SectionHeading
             eyebrow="Map"
             title="Find us in McAllen"
-            subtitle="Located on W US-83 BUS in the heart of the Rio Grande Valley."
+            subtitle="Use live directions for the most accurate route to our showroom."
           />
-          <div className="mt-8 overflow-hidden rounded-3xl border border-white/10">
-            <iframe
-              title="Grill Street 140 map"
-              src={siteInfo.googleMapsEmbed}
-              className="h-[360px] w-full"
-              loading="lazy"
-            />
+          <div className="mt-8 rounded-3xl border border-white/10 bg-charcoal p-6">
+            <p className="text-sm text-steel">Map previews have been removed due to incorrect pin placement.</p>
+            <div className="mt-4">
+              <a className="btn-primary" href={siteInfo.googleMaps} target="_blank" rel="noreferrer">
+                Get Directions
+              </a>
+            </div>
           </div>
         </div>
       </section>

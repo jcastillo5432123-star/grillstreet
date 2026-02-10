@@ -1,24 +1,12 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { galleryImages } from "../lib/site-data";
 import { cn } from "../lib/utils";
 
 const filters = ["All", "Outdoor Kitchens", "Grills", "Backyard Setups", "Stainless Components"];
 
-const images = Array.from({ length: 30 }, (_, index) => {
-  const categories = [
-    "Outdoor Kitchens",
-    "Grills",
-    "Backyard Setups",
-    "Stainless Components"
-  ];
-  return {
-    id: index + 1,
-    category: categories[index % categories.length],
-    src: `https://images.unsplash.com/collection/483251/${index + 1}00?auto=format&fit=crop&w=800&q=80`,
-    caption: `Showroom install ${index + 1}`
-  };
-});
+const images = galleryImages;
 
 export default function GalleryGrid() {
   const [activeFilter, setActiveFilter] = useState("All");

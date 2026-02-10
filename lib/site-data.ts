@@ -7,14 +7,13 @@ export const siteInfo = {
   phoneSecondary: "956-627-0429",
   email: "info@gst140.com",
   address: "419 W US-83 BUS, McAllen, TX 78501",
+  addressAlt: "McAllen, TX 78501",
   hours: [
     "Mon-Fri 09:00-18:00",
     "Sat 10:00-17:00",
     "Sun Closed"
   ],
-  googleMaps: "https://www.google.com/maps?q=419+W+US-83+BUS,+McAllen,+TX+78501",
-  googleMapsEmbed:
-    "https://www.google.com/maps?q=419+W+US-83+BUS,+McAllen,+TX+78501&output=embed",
+  googleMaps: "https://maps.app.goo.gl/sWhAYn2Xs8mrRn9eA",
   url: "https://gst140.com"
 };
 
@@ -54,5 +53,32 @@ export const featuredCategories = [
     description: "Thermometers, smoke boxes, rib racks, and Wüsthof knives.",
     image:
       "https://images.unsplash.com/photo-1513432583885-4be61f3a45a5?auto=format&fit=crop&w=1200&q=80"
+  }
+];
+
+export const galleryImages = [
+  {
+    id: 1,
+    category: "Backyard Setups",
+    src: "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=900&q=80",
+    caption: "Poolside outdoor kitchen and covered patio"
+  },
+  {
+    id: 2,
+    category: "Outdoor Kitchens",
+    src: "https://images.unsplash.com/photo-1514516345957-556ca7c90a9f?auto=format&fit=crop&w=900&q=80",
+    caption: "L-shaped grill island with sink and storage"
+  },
+  {
+    id: 3,
+    category: "Stainless Components",
+    src: "https://images.unsplash.com/photo-1556912167-f556f1f39fdf?auto=format&fit=crop&w=900&q=80",
+    caption: "Premium grill setup with matching vent hood"
+  },
+  {
+    id: 4,
+    category: "Outdoor Kitchens",
+    src: "https://images.unsplash.com/photo-1514516345957-556ca7c90a9f?auto=format&fit=crop&w=900&q=80",
+    caption: "Outdoor bar and grill station"
   }
 ];

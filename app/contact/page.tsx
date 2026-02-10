@@ -36,13 +36,13 @@ export default function ContactPage() {
               <p>Email: {siteInfo.email}</p>
               <p>Mon–Fri 9:00–6:00, Sat 10:00–5:00, Sun Closed or varies</p>
             </div>
-            <div className="mt-8 overflow-hidden rounded-3xl border border-white/10">
-              <iframe
-                title="Grill Street map"
-                src={siteInfo.googleMapsEmbed}
-                className="h-[260px] w-full"
-                loading="lazy"
-              />
+            <div className="mt-8 rounded-3xl border border-white/10 bg-charcoal p-5 text-sm text-steel">
+              Map previews have been removed to avoid incorrect location details.
+              <div className="mt-4">
+                <a className="btn-outline" href={siteInfo.googleMaps} target="_blank" rel="noreferrer">
+                  Get Directions
+                </a>
+              </div>
             </div>
           </div>
         </div>
