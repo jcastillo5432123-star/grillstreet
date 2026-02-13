@@ -102,7 +102,11 @@ export default function HomePage() {
             {featuredCategories.map((category) => (
               <div key={category.title} className="group overflow-hidden rounded-3xl border border-white/10 bg-ash">
                 <div className="h-48 overflow-hidden">
-                  <img src={category.image} alt={category.title} className="h-full w-full object-cover transition group-hover:scale-105" />
+                  <img
+                    src={category.image}
+                    alt={category.title}
+                    className="h-full w-full object-cover transition group-hover:scale-105"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="heading-md text-sand">{category.title}</h3>
@@ -127,17 +131,14 @@ export default function HomePage() {
             subtitle="From showroom inspiration to installation, our experienced team handles every step."
           />
           <div className="mt-10 grid gap-6 md:grid-cols-4">
-            {[
-              "Visit showroom / call",
-              "Measure & design",
-              "Build + install",
-              "Grill season starts"
-            ].map((step, index) => (
-              <div key={step} className="glass-card">
-                <span className="badge">Step {index + 1}</span>
-                <p className="mt-4 text-sm text-steel">{step}</p>
-              </div>
-            ))}
+            {["Visit showroom / call", "Measure & design", "Build + install", "Grill season starts"].map(
+              (step, index) => (
+                <div key={step} className="glass-card">
+                  <span className="badge">Step {index + 1}</span>
+                  <p className="mt-4 text-sm text-steel">{step}</p>
+                </div>
+              )
+            )}
           </div>
         </div>
       </section>
