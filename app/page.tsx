@@ -10,24 +10,7 @@ export const metadata = {
     "Outdoor kitchens, premium grills, and outdoor living products in the Rio Grande Valley. Visit our McAllen showroom or schedule a free consultation."
 };
 
-const testimonialImages = [
-  {
-    src: "/testimonials/review-javier.svg",
-    alt: "Google review from JavierDiezG"
-  },
-  {
-    src: "/testimonials/review-david.svg",
-    alt: "Google review from David Carlson"
-  },
-  {
-    src: "/testimonials/review-john.svg",
-    alt: "Google review from John Manllo"
-  },
-  {
-    src: "/testimonials/review-role.svg",
-    alt: "Google review from Role Gonzalez"
-  }
-];
+const testimonialSlots = ["Testimonial 1", "Testimonial 2", "Testimonial 3", "Testimonial 4"];
 
 export default function HomePage() {
   return (
@@ -164,12 +147,13 @@ export default function HomePage() {
           <SectionHeading
             eyebrow="Testimonials"
             title="Trusted by RGV homeowners"
-            subtitle="Real projects and real feedback from outdoor living clients across the Valley."
+            subtitle="Use these open spaces to add your own customer testimonials."
           />
           <div className="mt-10 grid gap-6 lg:grid-cols-2">
-            {testimonialImages.map((reviewImage) => (
-              <div key={reviewImage.src} className="overflow-hidden rounded-3xl border border-white/10 bg-[#1e222d]">
-                <img src={reviewImage.src} alt={reviewImage.alt} className="h-auto w-full" />
+            {testimonialSlots.map((slot) => (
+              <div key={slot} className="rounded-3xl border border-dashed border-white/20 bg-[#1e222d] p-6">
+                <p className="text-sm text-steel">{slot}</p>
+                <p className="mt-3 text-sm text-steel/70">Add your testimonial text here.</p>
               </div>
             ))}
           </div>
