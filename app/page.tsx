@@ -2,7 +2,6 @@ import Link from "next/link";
 import PageHero from "../components/PageHero";
 import SectionHeading from "../components/SectionHeading";
 import InfoCard from "../components/InfoCard";
-import TestimonialCard from "../components/TestimonialCard";
 import { featuredCategories, siteInfo } from "../lib/site-data";
 
 export const metadata = {
@@ -11,36 +10,22 @@ export const metadata = {
     "Outdoor kitchens, premium grills, and outdoor living products in the Rio Grande Valley. Visit our McAllen showroom or schedule a free consultation."
 };
 
-const testimonials = [
+const testimonialImages = [
   {
-    quote: "From design to install, Grill Street 140° delivered a showpiece kitchen we use every weekend.",
-    name: "RGV Homeowner",
-    location: "Sharyland"
+    src: "/testimonials/review-javier.svg",
+    alt: "Google review from JavierDiezG"
   },
   {
-    quote: "They walked us through every grill option and matched the exact cooking style we wanted.",
-    name: "Patio Entertainer",
-    location: "McAllen"
+    src: "/testimonials/review-david.svg",
+    alt: "Google review from David Carlson"
   },
   {
-    quote: "The showroom is incredible. We could see and touch everything before committing.",
-    name: "Outdoor Host",
-    location: "Edinburg"
+    src: "/testimonials/review-john.svg",
+    alt: "Google review from John Manllo"
   },
   {
-    quote: "Quality craftsmanship and an experienced team. Our outdoor island looks flawless.",
-    name: "Valley Resident",
-    location: "Mission"
-  },
-  {
-    quote: "We loved the stainless components and all the accessories in one place.",
-    name: "Backyard Chef",
-    location: "Pharr"
-  },
-  {
-    quote: "Our consultation was free, fast, and led to the perfect grill setup.",
-    name: "Weekend Griller",
-    location: "Rio Grande City"
+    src: "/testimonials/review-role.svg",
+    alt: "Google review from Role Gonzalez"
   }
 ];
 
@@ -181,9 +166,11 @@ export default function HomePage() {
             title="Trusted by RGV homeowners"
             subtitle="Real projects and real feedback from outdoor living clients across the Valley."
           />
-          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {testimonials.map((testimonial) => (
-              <TestimonialCard key={testimonial.quote} {...testimonial} />
+          <div className="mt-10 grid gap-6 lg:grid-cols-2">
+            {testimonialImages.map((reviewImage) => (
+              <div key={reviewImage.src} className="overflow-hidden rounded-3xl border border-white/10 bg-[#1e222d]">
+                <img src={reviewImage.src} alt={reviewImage.alt} className="h-auto w-full" />
+              </div>
             ))}
           </div>
           <div className="mt-10 flex flex-wrap items-center gap-4">

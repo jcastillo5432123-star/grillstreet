@@ -1,0 +1,14 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='760' height='400' viewBox='0 0 760 400'>
+  <rect width='760' height='400' fill='#1e222d'/>
+  <text x='20' y='36' fill='#e8edf4' font-size='26' font-family='Arial' font-weight='700'>David Carlson</text>
+  <text x='20' y='64' fill='#9ca7b5' font-size='18' font-family='Arial'>Local Guide · 38 reviews · 7 photos</text>
+  <text x='20' y='94' fill='#ffc400' font-size='20' font-family='Arial'>★★★★★</text>
+  <text x='130' y='94' fill='#9ca7b5' font-size='18' font-family='Arial'>2 weeks ago</text>
+  <foreignObject x='20' y='110' width='720' height='270'>
+    <div xmlns='http://www.w3.org/1999/xhtml' style='font-family:Arial;color:#e8edf4;font-size:16px;line-height:1.4'>
+      <p>If you're in McAllen and thinking about an outdoor kitchen or grill upgrade, this place is a must.</p>
+      <p>The selection is impressive, and the team genuinely takes time to help customers get exactly what they want.</p>
+      <p>Great to find a place that stands behind their work and helps every step of the way.</p>
+    </div>
+  </foreignObject>
+</svg>
