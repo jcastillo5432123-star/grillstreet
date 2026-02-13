@@ -10,24 +10,7 @@ export const metadata = {
     "Outdoor kitchens, premium grills, and outdoor living products in the Rio Grande Valley. Visit our McAllen showroom or schedule a free consultation."
 };
 
-const testimonialImages = [
-  {
-    src: "/testimonials/custom/testimonial-1.svg",
-    alt: "Custom testimonial placeholder 1"
-  },
-  {
-    src: "/testimonials/custom/testimonial-2.svg",
-    alt: "Custom testimonial placeholder 2"
-  },
-  {
-    src: "/testimonials/custom/testimonial-3.svg",
-    alt: "Custom testimonial placeholder 3"
-  },
-  {
-    src: "/testimonials/custom/testimonial-4.svg",
-    alt: "Custom testimonial placeholder 4"
-  }
-];
+const testimonialSlots = ["Testimonial 1", "Testimonial 2", "Testimonial 3", "Testimonial 4"];
 
 export default function HomePage() {
   return (
@@ -119,7 +102,11 @@ export default function HomePage() {
             {featuredCategories.map((category) => (
               <div key={category.title} className="group overflow-hidden rounded-3xl border border-white/10 bg-ash">
                 <div className="h-48 overflow-hidden">
-                  <img src={category.image} alt={category.title} className="h-full w-full object-cover transition group-hover:scale-105" />
+                  <img
+                    src={category.image}
+                    alt={category.title}
+                    className="h-full w-full object-cover transition group-hover:scale-105"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="heading-md text-sand">{category.title}</h3>
@@ -144,17 +131,14 @@ export default function HomePage() {
             subtitle="From showroom inspiration to installation, our experienced team handles every step."
           />
           <div className="mt-10 grid gap-6 md:grid-cols-4">
-            {[
-              "Visit showroom / call",
-              "Measure & design",
-              "Build + install",
-              "Grill season starts"
-            ].map((step, index) => (
-              <div key={step} className="glass-card">
-                <span className="badge">Step {index + 1}</span>
-                <p className="mt-4 text-sm text-steel">{step}</p>
-              </div>
-            ))}
+            {["Visit showroom / call", "Measure & design", "Build + install", "Grill season starts"].map(
+              (step, index) => (
+                <div key={step} className="glass-card">
+                  <span className="badge">Step {index + 1}</span>
+                  <p className="mt-4 text-sm text-steel">{step}</p>
+                </div>
+              )
+            )}
           </div>
         </div>
       </section>
@@ -164,12 +148,13 @@ export default function HomePage() {
           <SectionHeading
             eyebrow="Testimonials"
             title="Trusted by RGV homeowners"
-            subtitle="Replace these placeholder files with your own testimonial photos in /public/testimonials/custom."
+            subtitle="Use these open spaces to add your own customer testimonials."
           />
           <div className="mt-10 grid gap-6 lg:grid-cols-2">
-            {testimonialImages.map((reviewImage) => (
-              <div key={reviewImage.src} className="overflow-hidden rounded-3xl border border-white/10 bg-[#1e222d]">
-                <img src={reviewImage.src} alt={reviewImage.alt} className="h-auto w-full" />
+            {testimonialSlots.map((slot) => (
+              <div key={slot} className="rounded-3xl border border-dashed border-white/20 bg-[#1e222d] p-6">
+                <p className="text-sm text-steel">{slot}</p>
+                <p className="mt-3 text-sm text-steel/70">Add your testimonial text here.</p>
               </div>
             ))}
           </div>
