@@ -53,9 +53,26 @@ export default function Footer() {
               </li>
             ))}
           </ul>
-          <div className="mt-6 flex gap-3 text-steel">
-            <span className="rounded-full border border-white/10 px-3 py-1 text-xs">Instagram</span>
-            <span className="rounded-full border border-white/10 px-3 py-1 text-xs">Facebook</span>
+          <div className="mt-6">
+            <p className="text-xs uppercase tracking-[0.2em] text-steel">Follow our latest installs & events</p>
+            <div className="mt-3 flex flex-wrap gap-3 text-steel">
+              <a
+                href={siteInfo.socialLinks.instagram}
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-full border border-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] transition hover:border-ember hover:text-ember"
+              >
+                Instagram
+              </a>
+              <a
+                href={siteInfo.socialLinks.facebook}
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-full border border-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] transition hover:border-ember hover:text-ember"
+              >
+                Facebook
+              </a>
+            </div>
           </div>
         </div>
       </div>
