@@ -14,7 +14,11 @@ export const siteInfo = {
     "Sun Closed"
   ],
   googleMaps: "https://maps.app.goo.gl/sWhAYn2Xs8mrRn9eA",
-  url: "https://gst140.com"
+  url: "https://gst140.com",
+  socialLinks: {
+    instagram: "https://www.instagram.com/gst140/",
+    facebook: "https://www.facebook.com/gst140/"
+  }
 };
 
 export const featuredCategories = [

@@ -37,6 +37,27 @@ export default function Header() {
           ))}
         </nav>
         <div className="flex items-center gap-3">
+          <div className="hidden items-center gap-2 lg:flex">
+            <span className="text-[10px] uppercase tracking-[0.2em] text-steel">Follow</span>
+            <a
+              href={siteInfo.socialLinks.instagram}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Follow Grill Street on Instagram"
+              className="rounded-full border border-white/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-steel transition hover:border-ember hover:text-ember"
+            >
+              Instagram
+            </a>
+            <a
+              href={siteInfo.socialLinks.facebook}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Follow Grill Street on Facebook"
+              className="rounded-full border border-white/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-steel transition hover:border-ember hover:text-ember"
+            >
+              Facebook
+            </a>
+          </div>
           <a
             href={`tel:${siteInfo.phoneSecondary}`}
             className="hidden rounded-full border border-ember/40 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-ember hover:bg-ember/10 md:inline-flex"
@@ -52,6 +73,12 @@ export default function Header() {
             {item.label}
           </Link>
         ))}
+        <a href={siteInfo.socialLinks.instagram} target="_blank" rel="noreferrer" className="whitespace-nowrap text-ember">
+          Instagram
+        </a>
+        <a href={siteInfo.socialLinks.facebook} target="_blank" rel="noreferrer" className="whitespace-nowrap text-ember">
+          Facebook
+        </a>
       </div>
     </header>
   );
