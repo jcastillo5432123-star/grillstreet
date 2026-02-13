@@ -57,6 +57,15 @@ export default function Header() {
             >
               Facebook
             </a>
+            <a
+              href={siteInfo.socialLinks.tiktok}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Follow Grill Street on TikTok"
+              className="rounded-full border border-white/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-steel transition hover:border-ember hover:text-ember"
+            >
+              TikTok
+            </a>
           </div>
           <a
             href={`tel:${siteInfo.phoneSecondary}`}
@@ -78,6 +87,9 @@ export default function Header() {
         </a>
         <a href={siteInfo.socialLinks.facebook} target="_blank" rel="noreferrer" className="whitespace-nowrap text-ember">
           Facebook
+        </a>
+        <a href={siteInfo.socialLinks.tiktok} target="_blank" rel="noreferrer" className="whitespace-nowrap text-ember">
+          TikTok
         </a>
       </div>
     </header>

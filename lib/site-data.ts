@@ -16,8 +16,9 @@ export const siteInfo = {
   googleMaps: "https://maps.app.goo.gl/sWhAYn2Xs8mrRn9eA",
   url: "https://gst140.com",
   socialLinks: {
-    instagram: "https://www.instagram.com/gst140/",
-    facebook: "https://www.facebook.com/gst140/"
+    instagram: "https://www.instagram.com/grillstreet140/",
+    facebook: "https://www.facebook.com/grillstreet140/",
+    tiktok: "https://www.tiktok.com/@grillstreet140"
   }
 };
 

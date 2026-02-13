@@ -72,6 +72,14 @@ export default function Footer() {
               >
                 Facebook
               </a>
+              <a
+                href={siteInfo.socialLinks.tiktok}
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-full border border-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] transition hover:border-ember hover:text-ember"
+              >
+                TikTok
+              </a>
             </div>
           </div>
         </div>
