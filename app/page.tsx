@@ -12,20 +12,20 @@ export const metadata = {
 
 const testimonialImages = [
   {
-    src: "/testimonials/review-javier.svg",
-    alt: "Google review from JavierDiezG"
+    src: "/testimonials/custom/testimonial-1.svg",
+    alt: "Custom testimonial placeholder 1"
   },
   {
-    src: "/testimonials/review-david.svg",
-    alt: "Google review from David Carlson"
+    src: "/testimonials/custom/testimonial-2.svg",
+    alt: "Custom testimonial placeholder 2"
   },
   {
-    src: "/testimonials/review-john.svg",
-    alt: "Google review from John Manllo"
+    src: "/testimonials/custom/testimonial-3.svg",
+    alt: "Custom testimonial placeholder 3"
   },
   {
-    src: "/testimonials/review-role.svg",
-    alt: "Google review from Role Gonzalez"
+    src: "/testimonials/custom/testimonial-4.svg",
+    alt: "Custom testimonial placeholder 4"
   }
 ];
 
@@ -164,7 +164,7 @@ export default function HomePage() {
           <SectionHeading
             eyebrow="Testimonials"
             title="Trusted by RGV homeowners"
-            subtitle="Real projects and real feedback from outdoor living clients across the Valley."
+            subtitle="Replace these placeholder files with your own testimonial photos in /public/testimonials/custom."
           />
           <div className="mt-10 grid gap-6 lg:grid-cols-2">
             {testimonialImages.map((reviewImage) => (
